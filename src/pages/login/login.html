@@ -6,8 +6,8 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>Login</ion-title>
+  <ion-navbar color="primary">
+    <ion-title text-center>Login</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,12 +15,20 @@
 
 <ion-content padding>
   
-  <!--<button primary style="width: 100%; padding: 20px;" (click)="signUp()">-->
-  <!--      Sign Up-->
-  <!--  </button>-->
- 
-  <!--  <button secondary style="width: 100%; padding: 20px;" (click)="signIn()">-->
-  <!--      Sign In-->
-  <!--  </button>-->
+  <ion-list>
+
+  <ion-item>
+    <ion-input type="text" placeholder="Email" [(ngModel)]="email">Email</ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input type="password" placeholder="Password" [(ngModel)]="password">Password</ion-input>
+  </ion-item>
+
+</ion-list>
+
+  <input ion-button outline block color="primary" type="submit" value="Submit">
+
+  <!--<button ion-button outline block color="primary" (click)="loginEmail()">Login</button>-->
 
 </ion-content>
