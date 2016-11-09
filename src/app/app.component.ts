@@ -2,9 +2,14 @@ import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 import { NavController } from 'ionic-angular';
+
 import { LandingPage } from '../pages/landing/landing';
 import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
+import { LobbyPage } from '../pages/lobby/lobby';
+import { QuestionsPage } from '../pages/questions/questions';
+import { ResultsPage } from '../pages/results/results';
+
 
 
 

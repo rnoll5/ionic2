@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { LandingPage } from '../landing/landing';
+import { LobbyPage } from '../lobby/lobby';
+
 /*
   Generated class for the Register page.
 
@@ -13,10 +14,21 @@ import { LandingPage } from '../landing/landing';
 })
 export class RegisterPage {
 
-  constructor(public navCtrl: NavController) {}
+  constructor(public navCtrl: NavController) {
+    this.navCtrl = navCtrl;
+  }
 
   ionViewDidLoad() {
     console.log('Hello RegisterPage Page');
   }
 
+    register() {
+    this.navCtrl.push(LobbyPage);
+  }
+  
+    user = {}; 
+    
+  signupForm = function(form) { 
+    if(form.invalid) return alert("Please complete the form before proceeding.");
+  }
 }

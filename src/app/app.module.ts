@@ -1,10 +1,14 @@
 import { NgModule } from '@angular/core';
 import { IonicApp, IonicModule } from 'ionic-angular';
-import { MyApp } from './app.component';
 import { NavController } from 'ionic-angular';
+
+import { MyApp } from './app.component';
 import { LandingPage } from '../pages/landing/landing';
 import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
+import { LobbyPage } from '../pages/lobby/lobby';
+import { QuestionsPage } from '../pages/questions/questions';
+import { ResultsPage } from '../pages/results/results';
 
 
 // const injections = [
@@ -18,7 +22,10 @@ import { RegisterPage } from '../pages/register/register';
     MyApp,
     LandingPage,
     LoginPage,
-    RegisterPage
+    RegisterPage,
+    LobbyPage,
+    QuestionsPage,
+    ResultsPage
 
   ],
   imports: [
@@ -29,8 +36,10 @@ import { RegisterPage } from '../pages/register/register';
     MyApp,
     LandingPage,
     LoginPage,
-    RegisterPage
-
+    RegisterPage,
+    LobbyPage,
+    QuestionsPage,
+    ResultsPage
   ],
   providers: []
 })
